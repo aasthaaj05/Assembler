@@ -16,3 +16,7 @@ The second part of the project involves the assembler itself, which translates t
 1. Lexical Analysis: Breaking the code into tokens.
 2. Syntax and Semantic Analysis: Validating instructions, operands, and addressing modes.
 3. Code Generation: Producing the final machine code output.
+
+## About code
+Data structures used: 2D array, Hash table
+
