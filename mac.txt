@@ -1,0 +1,23 @@
+MACRO
+        EVAL &P, &Q, &R
+        MOVER AREG, "5"
+        ADD AREG,  &P
+        MULT AREG,&Q
+        MOVEM AREG,&R
+        MEND
+        MACRO
+        INCR &A,&B
+        ADD &A, ="1"
+        SUB &B, ="1"
+        MEND
+        START 100
+        ADD BREG,A
+        EVAL A, B, C
+        SUB BREG,A
+        INCR AREG, BREG
+        ADD BREG,P
+        EVAL P, Q, R
+        A DS 1
+        B DS 1
+        C DS 1
+        END

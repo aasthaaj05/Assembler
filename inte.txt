@@ -1,0 +1,24 @@
+        START 100
+        ADD BREG,A
+
+	  MOVER  AREG,  "5"    
+	  ADD  AREG,  A    
+	  MULT  AREG,&Q  A    
+	  MOVEM  AREG,&R  A    
+
+        SUB BREG,A
+
+	  ADD    ="1"    
+	  SUB    ="1"    
+
+        ADD BREG,P
+
+	  MOVER  AREG,  "5"    
+	  ADD  AREG,  P    
+	  MULT  AREG,&Q  P    
+	  MOVEM  AREG,&R  P    
+
+        A DS 1
+        B DS 1
+        C DS 1
+        END
